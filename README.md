@@ -1,5 +1,5 @@
-# Workshop announcement
-![ADMB/TMB is Awesome!](images/ADMBTMB_Logo.png)
+# Introductory TMB (and ADMB comparison) workshop
+![ADMB/TMB is Awesome!](images/ADMBTMB_Logo.png "ADMB-TMB")
 
 [Link to original announcement](https://github.com/TMB-ADMB-Workshops/Feb2016/blob/master/ADMB-TMB-Announcement.pdf)      
 
