@@ -1,9 +1,11 @@
 # Workshop announcement
+![ADMB/TMB is Awesome!](images/ADMBTMB_Logo.png)
 
 [Link to original announcement](https://github.com/TMB-ADMB-Workshops/Feb2016/blob/master/ADMB-TMB-Announcement.pdf)      
 
 Feb 8-12th 2016      
 9AM - 5PM each day, breaks occasionally    
+
 Room 106     
 School of Aquatic and Fisheries Sciences   
 1122 NE Boat St, Seattle, WA 98105
