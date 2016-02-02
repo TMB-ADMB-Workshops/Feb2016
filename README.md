@@ -1,7 +1,34 @@
 # Workshop announcement
 
-## Preamble
+[Link to original announcement](https://github.com/TMB-ADMB-Workshops/Feb2016/blob/master/ADMB-TMB-Announcement.pdf)      
 
+Feb 8-12th 2016      
+Room 106     
+School of Aquatic and Fisheries Sciences   
+1122 NE Boat St, Seattle, WA 98105
+
+
+## Summary
+Template Model Builder (TMB) advances practices developed in ADMB by improving ways to deal with random effects and 
+a wider range of contributed libraries. This introductory workshop will help familiarize participants with approaches 
+to model development in TMB. Contrasts with ADMB will be covered, though participants are not required to be proficient in ADMB. Participants are assumed to have a background in applied statistics and statistical computing. Specifically, some experience fitting nonlinear models to data (in stock assessment or elsewhere) and basic programming skills.
+*Arni Magnusson* and *Jim Thorson* will guide the workshop; participation is be open to NOAA staff who are able to attend, UW students, and other interested scientists depending on space availability. Workshop facilitation by Jim Ianelli and any other volunteers. UW Spring Quarter 4-credit course: “Spatio-temporal models for ecologists” will use TMB extensively.  
+
+###Activities 
+   1.	Overview of different ways to install and update TMB, incl. GitHub repository access      
+   2.	Overview of TMB workflow and alternative working environments      
+   3.	Demonstrations and exercises, starting with simple models and gradually adding complexity      
+   4.	Statistical techniques to evaluate uncertainty and the use of random effects, as well as debugging      
+   5.	User-specific applications      
+   6.	Identify areas where enhancements to TMB documentation and training are needed      
+
+Dates
+: 		February 8-12, 2016
+
+Contact
+: 	Jim.Ianelli@noaa.gov for registration and questions. 
+
+## Format
 The general structure of the workshop is that mornings will be lectures and demonstrations (how to build TMB models), while afternoons 
 will be explorations of different software components (how to contribute to TMB development). Throughout the workshop, we will get an overview of the existing TMB documentation and identify where enhancements are needed.
 
@@ -15,13 +42,13 @@ The afternoons will not follow a rigid structure, so participants can focus on a
 |Mon|am| Intro to TMB, building simple models |
 |Mon|pm| Closer look at installation, GitHub, RStudio/Emacs/other |
 |Tue |am| Working with parameters, nonlinear models |
-|Tue |pm| Anatomy of the TMB package, objects, and overall design |
+|Tue |pm| Anatomy of the TMB package, objects, and overall design, group projects (breakouts?)|
 |Tue (Fat) |ppm| Some sort of Mardi gras celebration... |
-|Wed|am| Stock assessment models, uncertainty, debugging |
-|Wed|pm| Implementing uncertainty analysis in TMB |
-|Thu|am| Random effects, geostatistical methods |
+|Wed|am| Group project updates, Stock assessment models, debugging uncertainty estimates, MCMC developments (Cole) |
+|Wed|pm| Debugging in TMB, contributing to the development, working on projects from groups|
+|Thu|am| Group project updates, Random effects, geostatistical methods |
 |Thu|pm| Related C++ libraries and R packages, CppAD, glmmTMB |
-|Fri|am| Geostatistical and spatio-temporal models continued |
+|Fri|am| Group project updates, Geostatistical and spatio-temporal models continued |
 |Fri|pm| TBD (one degree of freedom) |
 
 ## Topics to consider for breakout groups
@@ -96,11 +123,11 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Marie Ferguson |marie.ferguson@noaa.gov |NOAA |17|
 |Andre Punt |Aepunt@uw.edu |UW |18|
 |Brandon Chasco |brandon.chasco@gmail.com |UW/OSU |19|
-|Cole Monnahan| | | |
-|Bill Clark| | | |
-|Kotaro| | ||
-|Kelli | | | | 
-|Allan Hicks | |  | | 
+|Cole Monnahan| | |20 |
+|Bill Clark| | | 21|
+|Kotaro| | |22|
+|Kelli | | |23 | 
+|Allan Hicks | |  |24 | 
 
 ## Remote access interest
 SEFSC Beaufort lab
