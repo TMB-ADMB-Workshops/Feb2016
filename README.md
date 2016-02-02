@@ -130,7 +130,8 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Allan Hicks | |  |24 | 
 
 ## Remote access interest
-SEFSC Beaufort lab
-NWFSC  / Newport lab
+SEFSC Beaufort lab      
+
+NWFSC  / Newport lab      
+      
 SWFSC (Huihua, 5-10 people)
-Remote A
