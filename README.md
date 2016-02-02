@@ -55,7 +55,7 @@ The afternoons will not follow a rigid structure, so participants can focus on a
 |Fri|pm| TBD (one degree of freedom) |
 
 ## Topics to consider for breakout groups
-Below are some case studies that might be of interest for different groups
+Below are some case studies that might be of interest for different groups (**please consider submitting your topic of interest!**)
 
   * Random effects for estimating future fishery weights at age (Jim I.)
   * Time series modeling (building from examples)
