@@ -1,0 +1,3 @@
+# Course announcement
+
+first draft to come shortly...
