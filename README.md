@@ -3,6 +3,7 @@
 [Link to original announcement](https://github.com/TMB-ADMB-Workshops/Feb2016/blob/master/ADMB-TMB-Announcement.pdf)      
 
 Feb 8-12th 2016      
+9AM - 5PM each day, breaks occasionally    
 Room 106     
 School of Aquatic and Fisheries Sciences   
 1122 NE Boat St, Seattle, WA 98105
@@ -12,7 +13,7 @@ School of Aquatic and Fisheries Sciences
 Template Model Builder (TMB) advances practices developed in ADMB by improving ways to deal with random effects and 
 a wider range of contributed libraries. This introductory workshop will help familiarize participants with approaches 
 to model development in TMB. Contrasts with ADMB will be covered, though participants are not required to be proficient in ADMB. Participants are assumed to have a background in applied statistics and statistical computing. Specifically, some experience fitting nonlinear models to data (in stock assessment or elsewhere) and basic programming skills.
-*Arni Magnusson* and *Jim Thorson* will guide the workshop; participation is be open to NOAA staff who are able to attend, UW students, and other interested scientists depending on space availability. Workshop facilitation by Jim Ianelli and any other volunteers. UW Spring Quarter 4-credit course: “Spatio-temporal models for ecologists” will use TMB extensively.  
+**Arni Magnusson** and **Jim Thorson** will guide the workshop; participation is be open to NOAA staff who are able to attend, UW students, and other interested scientists depending on space availability. Workshop facilitation by Jim Ianelli and any other volunteers. UW Spring Quarter 4-credit course: “Spatio-temporal models for ecologists” will use TMB extensively.  
 
 ###Activities 
    1.	Overview of different ways to install and update TMB, incl. GitHub repository access      
