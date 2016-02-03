@@ -134,7 +134,7 @@ SEFSC Beaufort lab
 
 NEFSC Legault/Brooks/Shank
 
-DUMASS Faye
+(D)UMASS Gavin Fay, Megan Winton (mwinton@umassd.edu) 
 
 NWFSC  / Newport lab
 
