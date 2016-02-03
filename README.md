@@ -99,11 +99,7 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
    correctness. There are some tests in "adcomp/tmb_syntax" but it
    needs improvement.
 
-5. The C++ code could also need some re-structuring and cleanup but
-   that is not something I recommend for this workshop.
-
 # Participants
-
 
 | name | email | notes | N |
 | --- | --- | --- | --- |
