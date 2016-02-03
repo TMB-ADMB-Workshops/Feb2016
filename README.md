@@ -126,6 +126,7 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Bill Clark| | | 21|
 |Kelli | | |22|
 |Allan Hicks | | |23|
+|Noble Hendrix | | |24|
 
 ## Remote access interest
 SEFSC Beaufort lab
