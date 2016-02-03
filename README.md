@@ -105,12 +105,12 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 | --- | --- | --- | --- |
 |Arni Magnusson |arnima@hafro.is |Hafro, Instructor! |1|
 |Jim Thorson |James.Thorson@noaa.gov |NOAA, Instructor! |2|
-|Jim Ianelli |jim.ianelli@noaa.gov |NOAA, limited to Excel©| 3|
-|Kirstin Holsman |Kirstin.Holsman@noaa.gov|NOAA, sublime experience |4|
+|Jim Ianelli |jim.ianelli@noaa.gov |NOAA| 3|
+|Kirstin Holsman |Kirstin.Holsman@noaa.gov|NOAA|4|
 |Martin Dorn |martin.dorn@noaa.gov  |NOAA, limited experience |5|
 |Steve Martell |Martell.Steve@gmail.com |SS, Mac fanboy |6|
 |Lee Qi |leeqi@uw.edu |UW |7|
-|Teresa A’mar |teresa.amar@noaa.gov |HQ, Guru extraordinare |8|
+|Teresa A’mar |teresa.amar@noaa.gov |NOAA Off of Sci and Tech. |8|
 |Gwladys Lambert |gwladys.lambert@noaa.gov |NOAA Post doc |9|
 |Johnoel Ancheta |johnoel@hawaii.edu |Univ of Hawaii, ADMB dude |10|
 |Felipe Carvalho |felipe.carvalho@noaa.gov |JIMAR/NOAA |11|
@@ -126,7 +126,7 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Cole Monnahan| | |21|
 |Bill Clark| | | 22|
 |Kelli | | |23|
-|Allan Hicks | | |24|
+|Allan Hicks |Allan.Hicks@noaa.gov |not for long |24|
 |Noble Hendrix | | |25|
 
 ## Remote access participants
