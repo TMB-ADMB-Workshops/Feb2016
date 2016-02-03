@@ -122,16 +122,19 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Marie Ferguson |marie.ferguson@noaa.gov |NOAA |17|
 |Andre Punt |aepunt@uw.edu |UW |18|
 |Brandon Chasco |brandon.chasco@gmail.com |UW/OSU |19|
-|Cole Monnahan| | |20|
-|Bill Clark| | | 21|
-|Kelli | | |22|
-|Allan Hicks | | |23|
-|Noble Hendrix | | |24|
+|Jin Gao|jingao@uw.edu | |20|
+|Cole Monnahan| | |21|
+|Bill Clark| | | 22|
+|Kelli | | |23|
+|Allan Hicks | | |24|
+|Noble Hendrix | | |25|
 
-## Remote access interest
+## Remote access participants
 SEFSC Beaufort lab
 
 NEFSC Legault/Brooks/Shank
+
+DUMASS Faye
 
 NWFSC  / Newport lab
 
