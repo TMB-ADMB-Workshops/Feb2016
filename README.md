@@ -123,9 +123,9 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Andre Punt |aepunt@uw.edu |UW |18|
 |Brandon Chasco |brandon.chasco@gmail.com |UW/OSU |19|
 |Jin Gao|jingao@uw.edu | |20|
-|Cole Monnahan| | |21|
+|Cole Monnahan|monnahc@uw.edu | |21|
 |Bill Clark| | | 22|
-|Kelli | | |23|
+|Kelli |kfjohns@uw.edu | |23|
 |Allan Hicks |Allan.Hicks@noaa.gov | |24|
 |Noble Hendrix | | |25|
 |Elizabeth Phillips |emp11@uw.edu| |26 |
