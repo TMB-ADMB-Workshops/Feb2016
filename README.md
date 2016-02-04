@@ -126,8 +126,9 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Cole Monnahan| | |21|
 |Bill Clark| | | 22|
 |Kelli | | |23|
-|Allan Hicks |Allan.Hicks@noaa.gov |not for long |24|
+|Allan Hicks |Allan.Hicks@noaa.gov | |24|
 |Noble Hendrix | | |25|
+|Elizabeth Phillips |emp11@uw.edu| |26 |
 
 ## Remote access participants
 SEFSC Beaufort lab
