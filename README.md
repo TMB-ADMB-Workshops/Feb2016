@@ -108,7 +108,7 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 |Jim Ianelli |jim.ianelli@noaa.gov |NOAA| 3|
 |Kirstin Holsman |Kirstin.Holsman@noaa.gov|NOAA|4|
 |Martin Dorn |martin.dorn@noaa.gov  |NOAA, limited experience |5|
-|Steve Martell |Martell.Steve@gmail.com |SS, Mac fanboy |6|
+|Steve Martell |Martell.Steve@gmail.com |SeaState, Mac fanboy |6|
 |Lee Qi |leeqi@uw.edu |UW |7|
 |Teresa A’mar |teresa.amar@noaa.gov |NOAA Off of Sci and Tech. |8|
 |Gwladys Lambert |gwladys.lambert@noaa.gov |NOAA Post doc |9|
