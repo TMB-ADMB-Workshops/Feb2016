@@ -105,7 +105,7 @@ Below is a list provided from the core developer (Kasper Kristiansen) on ways th
 | --- | --- | --- | --- |
 |Arni Magnusson |arnima@hafro.is |Hafro, Instructor! |1|
 |Jim Thorson |James.Thorson@noaa.gov |NOAA, Instructor! |2|
-|Jim Ianelli |jim.ianelli@noaa.gov |NOAA| 3|
+|Jim Ianelli |jim.ianelli@noaa.gov |NOAA Uber Excel User| 3|
 |Kirstin Holsman |Kirstin.Holsman@noaa.gov|NOAA|4|
 |Martin Dorn |martin.dorn@noaa.gov  |NOAA, limited experience |5|
 |Steve Martell |Martell.Steve@gmail.com |SeaState, Mac fanboy |6|
