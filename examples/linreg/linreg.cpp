@@ -18,5 +18,7 @@ Type objective_function<Type>::operator() ()
   neglogL = -sum(dnorm(y, yfit, exp(logSigma), true));
 
   // JIM THORSON JUST ROCK'N TMB
+  
   return neglogL;
+  std::cout << b0<<" "<<b1<<"\n ";
 }
