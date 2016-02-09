@@ -20,15 +20,18 @@ Type objective_function<Type>::operator()()
 	Type sig = exp(log_sig);
 	Type tau = exp(log_tau);
 
-	vector<Type>    X = S * exp(u * tau);
-	vector<Type> rhat = a * X / ( Type(1.0) + b * X );
+	vector<Type>    x = S * exp(u);
+	vector<Type>    y = a * x / ( Type(1.0) + b * x );
+	vector<Type> epsi = log(R) - log(y);
 	Type nll = 0;
-	nll -= sum(dnorm(log(R),log(rhat),sig,true));
-	nll -= sum(dnorm(u,Type(0.0),Type(1.0),true));
+	nll -= sum(dnorm(epsi,Type(0.0),sig,true));
+	nll -= sum(dnorm(u,Type(0.0),tau,true));
 
 
-	REPORT(rhat);
-	REPORT(X);
+	REPORT(x);
+	REPORT(y);
+	REPORT(epsi);
+	ADREPORT(y);
 
 	return nll;
 }
