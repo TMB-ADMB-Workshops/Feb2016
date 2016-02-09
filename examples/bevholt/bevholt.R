@@ -17,6 +17,7 @@ rep <- sdreport(model)
 
 print(best)
 print(rep)
+summary(rep)
 
 Svec <- seq(0, 4000, 20)
 Rmax <- exp(best[["logRmax"]])
