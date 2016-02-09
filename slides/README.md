@@ -1,5 +1,5 @@
 # TMB install 
-![ADMB/TMB is Awesome!](../images/ADMBTMB_Logo.png "ADMB-TMB")
+![ADMB/TMB is Awesome!](../images/ADMBTMB_Logo.png "ADMB-TMB")       
 [Please go here for TMB install instructions ](https://github.com/kaskr/adcomp/wiki)      
 
 ## git  references
