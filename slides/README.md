@@ -10,6 +10,8 @@
 
 ## Common git commands
 The above covers the basics of git (use 99% of time)      
+| | |   
+|-----------|------------------|
 |git init		|	git checkout      |
 |git clone	|		git merge      |
 |git add		|	 git push      |
