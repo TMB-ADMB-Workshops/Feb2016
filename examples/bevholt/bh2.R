@@ -45,15 +45,17 @@ xx <- seq(0,max(c(S,X,a/b)),length=n)
 plot(xx,a*xx/(1+b*xx),col=1,lwd=2,type="l")
 points(S,R); abline(a=0,b=1)
 
-simdata <- list(R=data$R,S=data$S)
-pars <- list(log_a=log(a), 
+simdata <- list(R=R,S=S)
+simpars <- list(log_a=log(a), 
          	 log_b = log(b), 
          	 log_sig = log(sig), 
          	 log_tau = log(tau),
-		 	 u=rep(0,length=length(data$S))
+		 	 u=rep(0,length=n)
 		 	 )
-ff   <- MakeADFun(simdata,parameters=pars,random=c("u"),ADreport = FALSE)
-fit <- nlminb(ff$par,ff$fn,ff$gr) 
+ff   <- MakeADFun(simdata,parameters=simpars,random=c("u"),ADreport = FALSE)
+fit2 <- nlminb(ff$par,ff$fn,ff$gr) 
+
+rep2 <- sdreport(ff)
 
 
 
