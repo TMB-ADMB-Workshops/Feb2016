@@ -20,13 +20,13 @@ Debug _linreg.so_ shared library using lldb.
 
 	The R shell will exit and return to the (lldb) shell.
 
-4. In lldb command shell, set a breakpoint at file and line.
+4. In lldb command shell, set a breakpoint at file and line where the assertion failed.
 
 	`(lldb) breakpoint set --file linreg.cpp --line 20`
 
 	Repeat steps 2 then 3.
 
-	The output will show source code pointed at breakpoint.
+	The run output will show source code and point to the breakpoint where it paused.
 
 		   18  	  DATA_VECTOR(x);
 		   19  	  DATA_VECTOR(y);
@@ -35,6 +35,6 @@ Debug _linreg.so_ shared library using lldb.
 		   22  	  int n = y.size();
 		   23
 
-	For information on lldb, read [tutorial](http://lldb.llvm.org/tutorial.html).
+	For information on lldb, read [tutorial](http://lldb.llvm.org/tutorial.html) on how to use debugger.
 
 
