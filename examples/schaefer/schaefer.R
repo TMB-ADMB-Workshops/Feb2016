@@ -1,4 +1,4 @@
-setwd("~/_mymods/tmb/Feb2016/examples/schaefer")
+setwd("~/_mymods/tmb/Feb2016/examples/andre")
  hake <- read.table("schaefer.dat", header = TRUE)
 names(hake) <- c("t", "C", "I")
 parameters  <- list(logR=-1.1, logK=8.0, logQ=-7.9, logSigma=-2.3)

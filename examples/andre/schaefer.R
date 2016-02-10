@@ -1,3 +1,4 @@
+setwd("~/_mymods/tmb/Feb2016/examples/andre")
 hake <- read.table("schaefer.dat", header=TRUE)
 names(hake) <- c("t", "C", "I")
 Nyear <- length(hake$C)
@@ -11,7 +12,15 @@ dyn.load(dynlib("schaefer"))
 ################################################################################
 
 model <- MakeADFun(hake, parameters,DLL="schaefer")
-fit <- nlminb(model$par, model$fn, model$gr)
+# Added some options for nlminb 
+fit <- nlminb(model$par, model$fn, model$gr,control=list(iter.max=1000,eval.max=1000))
+names(fit)
+fit$iterations
+
+# Do some extra minimizations 
+for (i in 1:3)
+  fit <- nlminb(model$env$last.par.best , model$fn, model$gr)
+model$gr(fit$par)
 rep <- sdreport(model)
 
 print(summary(rep))
