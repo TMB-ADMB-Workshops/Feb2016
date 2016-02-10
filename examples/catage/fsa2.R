@@ -1,6 +1,6 @@
 setwd("~/_mymods/tmb/Feb2016/examples/catage/")
 load("fsa.RData") # gets "dat"
-dat
+
 library(TMB)
 compile("fsa2.cpp")
 dyn.load(dynlib("fsa2"))
@@ -14,8 +14,7 @@ parameters <- list(
   logQ=rep(0,nrow(dat$Q1)),
   logVarLogSurvey=0
 )
-obj <- MakeADFun(dat,parameters,DLL="fsa2", map=list(logFA=factor(c(1:4,NA,NA,NA))), silent=FALSE)
-obj <- MakeADFun(dat,parameters,DLL="fsa2", map=list(logFA=factor(c(1:4,NA,NA,NA))))
+obj <- MakeADFun(dat,parameters,DLL="fsa2", map=list(logFA=factor(c(1:4,NA,NA,NA))), silent=TRUE)
 opt <- nlminb(obj$par, obj$fn, obj$gr, control=list(iter.max=1000,eval.max=1000))
 rep <- sdreport(obj)
 srep<-summary(sdreport(obj))

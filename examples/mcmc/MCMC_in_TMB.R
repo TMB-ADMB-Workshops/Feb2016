@@ -7,13 +7,13 @@
 
 ## Note: bounded parameters not currently supported, so do those internally
 ## if needed.
+setwd("~/_mymods/tmb/Feb2016/examples/mcmc/")
 
 library(TMB)
 ?mcmc
 
 ## This runs the simple and loads that model object in the workspace.
 runExample("simple")
-
 
 ## Make model with random effects on 'u'. Note the starting values.
 obj <- MakeADFun(data=list(x=x, B=B, A=A),
@@ -32,10 +32,18 @@ rwm <- mcmc(obj=obj, nsim=N*8, algorithm='RWM', params.init=opt$par,
             alpha=.08, diagnostic=TRUE)
 ## Thin it to better approximate the gradient methods
 rwm$par <- rwm$par[seq(1, nrow(rwm$par), by=8),]
+names(rwm)
+str(rwm)
 hmc <- mcmc(obj=obj, nsim=N, algorithm='HMC', L=8, params.init=opt$par,
             diagnostic=TRUE, eps=.1)
+hmc2 <- mcmc(obj=obj, nsim=N, algorithm='HMC', L=8, params.init=opt$par,
+            diagnostic=TRUE, eps=.9)
+names(hmc)
+str(hmc)
 nuts <- mcmc(obj=obj, nsim=N, algorithm='NUTS', params.init=opt$par,
              diagnostic=TRUE, eps=.1, max_doubling=7)
+names(nuts)
+str(nuts)
 
 pairs(nuts$par[-(1:(N/2)),])
 
@@ -64,9 +72,18 @@ hmc2 <- mcmc(obj=obj2, nsim=N, algorithm='HMC', L=8,
             diagnostic=TRUE, eps=NULL)
 nuts2 <- mcmc(obj=obj2, nsim=N, algorithm='NUTS', params.init=opt2$par,
              diagnostic=TRUE, max_doubling=7, eps=NULL)
+nuts3 <- mcmc(obj=obj2, nsim=N, algorithm='NUTS', params.init=opt2$par,
+             diagnostic=TRUE, max_doubling=7, eps=NULL,delta=.9)
 
 ## See how they compare via ACF
 par(mfrow=c(3,4))
 for(i in par.names) acf(rwm2$par[,i], main=i)
 for(i in par.names) acf(hmc2$par[,i], main=i)
 for(i in par.names) acf(nuts2$par[,i], main=i)
+
+pairs(nuts2$par[-(1:(N/2)),])
+?mcmc.nuts
+sdreport(obj)
+names(hmc2$par)
+mean(hmc2$par[,115])
+sd(hmc2$par[,115])
