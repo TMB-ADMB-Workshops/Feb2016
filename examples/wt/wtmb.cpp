@@ -3,7 +3,7 @@ template<class Type>
 Type objective_function<Type>::operator() ()
 {
   DATA_ARRAY(wtage);
-  DATA_ARRAY(wtcv);
+  DATA_ARRAY(wt_sd);
 
   // matrix<Type> yfit(n);
   int nr = wtage.dim(0);
@@ -19,20 +19,19 @@ Type objective_function<Type>::operator() ()
 
   Type sigma_coh = exp(log_sd_coh);
   Type sigma_yr  = exp(log_sd_yr );
-  Type wt_pre;
-   = mnwt*exp(sigma_yr*yr_eff(i));
-  for (int i=0;i<=nr+3;i++)
+  matrix<Type> wt_pre(nr,nc);
+  for (int i=0;i<nr;i++)
   {
-    wt_pre(i) = mnwt*exp(sigma_yr*yr_eff(i));
-    for (int j=age_st;j<=age_end;j++)
+    wt_pre.row(i) = mnwt*exp(sigma_yr*yr_eff(i));
+    for (int j=0;j<nc;j++)
     {
       wt_pre(i,j) *= exp(sigma_coh*coh_eff(i-j));
-      if (i <= endyr)
-        nll += square(wt_obs(i,j)-wt_pre(i,j))/(2.*square(sd_obs(i,j)));
+      if (i <= nr-1)
+        nll += square(wtage(i,j)-wt_pre(i,j))/(2.*square(wt_sd(i,j)));
     }
   }
-  nll += 0.5*norm2(coh_eff);
-  nll += 0.5*norm2( yr_eff);
+  nll -= dnorm(coh_eff,0,sigma_coh);
+  nll -= dnorm( yr_eff,0,sigma_yr );
   /*
   if (sd_phase())
   {
