@@ -8,7 +8,7 @@ dyn.load(dynlib("schaefer"))
 
 ################################################################################
 
-model <- MakeADFun(hake, parameters)
+model <- MakeADFun(hake, parameters,DLL="schaefer")
 fit <- nlminb(model$par, model$fn, model$gr)
 rep <- sdreport(model)
 

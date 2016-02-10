@@ -46,6 +46,7 @@ xx <- seq(0,max(c(S,X,a/b)),length=n)
 plot(xx,a*xx/(1+b*xx),col=1,lwd=2,type="l")
 points(S,R); abline(a=0,b=1)
 
+# Estimation
 simdata <- list(R=R,S=S)
 simpars <- list(log_a=log(a), 
          	 log_b = log(b), 
@@ -56,10 +57,24 @@ simpars <- list(log_a=log(a),
 ff   <- MakeADFun(simdata,parameters=simpars,random=c("u"),ADreport = FALSE)
 fit2 <- nlminb(ff$par,ff$fn,ff$gr) 
 
-rep2 <- sdreport(ff)
+rep2 <- sdreport(ff,getJointPrecision=TRUE)
+
+# Hessian
+H  <- rep2$jointPrecision
+V  <- solve(H)
+sd <- sqrt(diag(V))
+R  <- V / (sd %o% sd)
+
 points(ff$rep(),col=2,pch=20)
 
+# ---------------------------------------------------------------------------- #
+# Graphics
+# ---------------------------------------------------------------------------- #
+library(ggplot2)
+library(plyr)
 
+# ---------------------------------------------------------------------------- #
+# ---------------------------------------------------------------------------- #
 
 
 
