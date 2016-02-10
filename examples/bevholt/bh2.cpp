@@ -21,8 +21,9 @@ Type objective_function<Type>::operator()()
 	Type tau = exp(log_tau);
 
 	vector<Type>    x = S * exp(u);
-	vector<Type>    y = a * x / ( Type(1.0) + b * x );
-	vector<Type> epsi = log(R) - log(y);
+	vector<Type>    r = a * x / ( Type(1.0) + b * x );
+	vector<Type> epsi = log(R) - log(r);
+	vector<Type>    y = r * exp(epsi);
 	Type nll = 0;
 	nll -= sum(dnorm(epsi,Type(0.0),sig,true));
 	nll -= sum(dnorm(u,Type(0.0),tau,true));
