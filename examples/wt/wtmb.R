@@ -3,6 +3,7 @@ data <- list()
 data$wtage <- read.table("wtmb.dat")
 data$wtcv  <- read.table("wtmbcv.dat")
 data
+names(data)
 # Load library
 library(TMB)
 
@@ -24,3 +25,5 @@ opt
 opt$hessian ## <-- FD hessian from optim
 obj$he()    ## <-- Analytical hessian
 sdreport(obj)
+
+   = mnwt*exp(sigma_yr*yr_eff(i));
