@@ -47,7 +47,7 @@ The afternoons will not follow a rigid structure, so participants can focus on a
 |Tue |am| Working with parameters, nonlinear models |
 |Tue |pm| Anatomy of the TMB package, objects, and overall design, group projects (breakouts?)|
 |Tue (Fat) |ppm| Some sort of Mardi gras celebration... |
-|Wed|am| Group project updates, Stock assessment models, debugging uncertainty estimates, MCMC developments (Cole) |
+|Wed|am| Group project updates, Stock assessment models, debugging, uncertainty estimates, MCMC developments (Cole) |
 |Wed|pm| Debugging in TMB, contributing to the development, working on projects from groups|
 |Thu|am| Group project updates, Random effects, geostatistical methods |
 |Thu|pm| Related C++ libraries and R packages, CppAD, glmmTMB |
