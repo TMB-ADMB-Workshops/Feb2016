@@ -46,6 +46,7 @@ Type objective_function<Type>::operator() ()
   ADREPORT(log(B)); // uncertainty
   REPORT(B);        // plot
   REPORT(Ihat);     // plot
+  REPORT(fpen);
 
   return f;
 }
