@@ -18,18 +18,22 @@ Debug _linreg.so_ shared library using lldb.
 
 	`Assertion failed: (x.size() != y.size()), function operator(), file linreg.cpp, line 20.`
 
+	The R shell will exit and return to the (lldb) shell.
+
 4. In lldb command shell, set a breakpoint at file and line.
 
 	`(lldb) breakpoint set --file linreg.cpp --line 20`
 
+	Repeat steps 2 then 3.
+
 	The output will show source code pointed at breakpoint.
 
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`18  	  DATA_VECTOR(x);`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`19  	  DATA_VECTOR(y);`    
-	`-> 20  	  assert(x.size() != y.size());`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`21  	`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`22  	  int n = y.size();`    
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`23  	`    
+		   18  	  DATA_VECTOR(x);
+		   19  	  DATA_VECTOR(y);
+		-> 20  	  assert(x.size() != y.size());
+		   21
+		   22  	  int n = y.size();
+		   23
 
 	For information on lldb, read [tutorial](http://lldb.llvm.org/tutorial.html).
 
