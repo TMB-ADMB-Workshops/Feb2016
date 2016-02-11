@@ -1,9 +1,10 @@
+#install.packages("Hmisc")
 require(TMB)
 require(Hmisc)
 
 # compile cpp code and load dll
-compile("simple_rand_walk.cpp")
-dyn.load(dynlib("simple_rand_walk"))
+compile("srw.cpp")
+dyn.load(dynlib("srw"))
 
 # create new data
 create.new.data <- FALSE
@@ -38,7 +39,7 @@ parameters <- list(
 )
 
 # now estimate population, process error, and observation error
-obj <- MakeADFun(dat,parameters,DLL="simple_rand_walk", random=c("population"), silent=TRUE)
+obj <- MakeADFun(dat,parameters,DLL="srw", random=c("population"), silent=TRUE)
 opt <- nlminb(obj$par, obj$fn, obj$gr, control=list(iter.max=1000,eval.max=1000))
 rep <- sdreport(obj)
 srep <- summary(sdreport(obj))
