@@ -1,1 +1,6 @@
-Bounds using scaled logistic
+Create a minimal C++ user library, then link it into the model
+
+During the workshop, we can just create a dummy function, one that works but
+does not provide any valuable functionality
+
+Also list functions that could be implemented in the future
