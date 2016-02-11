@@ -14,9 +14,9 @@ Debug _linreg.so_ shared library using lldb.
 
 	`> source('linreg.R')`
 
-	> *Note* Debug flag __"-g"__ should be added to function compile parameter in *linreg.R* for symbol information.
+	> *Note* Debug flags __"-O0 -g"__ should be added to function compile parameter in *linreg.R* for symbol information.
 	> 
-	> `compile("linreg.cpp", "-g")`
+	> `compile("linreg.cpp", "-O0 -g")`
 	> 
 
 	The output will show error at _file_ and _line_.
