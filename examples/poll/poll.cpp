@@ -32,7 +32,7 @@ Type objective_function<Type>::operator() ()
   int nys=maxYearS-minYearS+1;
 
   // setup F
-  matrix<Type> F(na,ny);
+  matrix<Type> F(ny,na);
   for(int y=0; y<ny; ++y){
     for(int a=0; a<na; ++a){
       F(y,a)=exp(logFY(y))*exp(logFA(a));
@@ -52,7 +52,7 @@ Type objective_function<Type>::operator() ()
       }
     }
   }
-  matrix<Type> predLogC(na,ny);
+  matrix<Type> predLogC(ny,na);
   for(int y=0; y<ny; ++y){
     for(int a=0; a<na; ++a){
       predLogC(y,a)=log(F(y,a))-log(F(y,a)+M(y,a))+log(Type(1.0)-exp(-F(y,a)-M(y,a)))+logN(y,a);
@@ -84,6 +84,7 @@ Type objective_function<Type>::operator() ()
   ssb.setZero();
   for(int y=0; y<ny; ++y){
     for(int a=0; a<na; ++a){
+    	std::cout<<y<<" "<<a<<" "<<"\n";
       ssb(y)+=exp(logN(y,a))*stockMeanWeight(y,a)*propMature(y,a);
     }
   }

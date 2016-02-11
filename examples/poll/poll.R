@@ -6,16 +6,17 @@ compile("poll.cpp")
 dyn.load(dynlib("poll"))
 
 parameters <- list(
-  logN1Y=rep(0,nrow(data$catchNo)),
-  logN1A=rep(0,ncol(data$catchNo)-1),
-  logFY=rep(0,ncol(data$catchNo)),
-  logFA=rep(0,nrow(data$catchNo)),
+  logN1Y=rep(0,ncol(data$catchNo)),
+  logN1A=rep(0,nrow(data$catchNo)-1),
+  logFY=rep(0,nrow(data$catchNo)),
+  logFA=rep(0,ncol(data$catchNo)),
   logVarLogCatch=c(0,0), 
-  logQ=rep(0,nrow(data$Q1)),
+  logQ=rep(0,ncol(data$Q1)),
   logVarLogSurvey=0
 )
 names(parameters)
-names(data$catchNo)
+(data$Q1)
+(parameters$logQ)
 obj <- MakeADFun(data,parameters,DLL="poll", map=list(logFA=factor(c(1:12,NA,NA,NA))))
 opt <- nlminb(obj$par, obj$fn, obj$gr, control=list(iter.max=1000,eval.max=1000))
 rep <- sdreport(obj)
