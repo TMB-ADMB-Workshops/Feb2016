@@ -15,10 +15,15 @@ parameters <- list(
   logVarLogSurvey=0
 )
 names(parameters)
+names(data)
+data$propMature
 (data$Q1)
+(data$stockMeanWeight)
+data$catchNo
 (parameters$logQ)
 obj <- MakeADFun(data,parameters,DLL="poll", map=list(logFA=factor(c(1:12,NA,NA,NA))))
 opt <- nlminb(obj$par, obj$fn, obj$gr, control=list(iter.max=1000,eval.max=1000))
+obj$gr()
 rep <- sdreport(obj)
 srep<-summary(sdreport(obj))
 ssb<-srep[rownames(srep)=="ssb",]

@@ -82,7 +82,7 @@ Type objective_function<Type>::operator() ()
 
   vector<Type> ssb(ny);
   ssb.setZero();
-  for(int y=0; y<ny; ++y){
+  for(int y=0; y<=ny; ++y){
     for(int a=0; a<na; ++a){
     	std::cout<<y<<" "<<a<<" "<<"\n";
       ssb(y)+=exp(logN(y,a))*stockMeanWeight(y,a)*propMature(y,a);
