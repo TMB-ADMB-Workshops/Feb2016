@@ -1,8 +1,7 @@
 #include <TMB.hpp>
 #include <signal.h>
 
-//Include the source file
-#include "triple.cpp"
+//#include "utils.h"
 
 #ifdef NDEBUG
   #undef NDEBUG
@@ -25,7 +24,7 @@ Type objective_function<Type>::operator() ()
   Type neglogL = 0.0;
 
   //Call triple function
-  yfit = triple(b0) + b1*x;
+  yfit = b0 + b1*x;
   neglogL = -sum(dnorm(y, yfit, exp(logSigma), true));
 
   // JIM THORSON JUST ROCK'N TMB

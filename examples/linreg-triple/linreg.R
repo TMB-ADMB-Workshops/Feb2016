@@ -2,10 +2,9 @@ data <- read.table("linreg.dat", header=TRUE)
 parameters <- list(b0=0, b1=0, logSigma=0)
 
 require(TMB)
-compile("linreg.cpp", "-O0 -g")
 dyn.load(dynlib("linreg"))
 
-################################################################################
+#################################################################################
 
 model <- MakeADFun(data, parameters, DLL="linreg")
 fit <- nlminb(model$par, model$fn, model$gr)
