@@ -7,14 +7,14 @@ names(data)
 # Load library
 library(TMB)
 
-compile("wtmb.cpp")
+compile("wtmb.cpp","-O0 -g")
 # Load compiled model
 dyn.load(dynlib("wtmb"))
 
 # Define parameters
 parameters <- list(a=0,b=0,logSigma=0)
 parameters
-obj <- MakeADFun(data,parameters)
+obj <- MakeADFun(data,parameters,DLL="wtmb")
 
 # Indicate if Hessian to be computed
 obj$hessian <- TRUE
