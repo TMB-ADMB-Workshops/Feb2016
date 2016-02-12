@@ -20,6 +20,7 @@ Type objective_function<Type>::operator() ()
   Type sigma_coh = exp(log_sd_coh);
   Type sigma_yr  = exp(log_sd_yr );
   matrix<Type> wt_pre(nr,nc);
+  matrix<Type> chi(nr,nc);
   for (int i=0;i<nr;i++)
   {
     wt_pre.row(i) = mnwt*exp(sigma_yr*yr_eff(i));
@@ -27,11 +28,11 @@ Type objective_function<Type>::operator() ()
     {
       wt_pre(i,j) *= exp(sigma_coh*coh_eff(i-j));
       if (i <= nr-1)
-        nll += square(wtage(i,j)-wt_pre(i,j))/(2.*square(wt_sd(i,j)));
+        nll += pow(wtage(i,j)-wt_pre(i,j),Type(2.))/(2.*pow(wt_sd(i,j),2));
     }
+    // nll -= dnorm(coh_eff,Type(0),sigma_coh,true);
+    nll -= dnorm( yr_eff(i),Type(0),sigma_yr,true );
   }
-  nll -= dnorm(coh_eff,0,sigma_coh);
-  nll -= dnorm( yr_eff,0,sigma_yr );
   /*
   if (sd_phase())
   {
